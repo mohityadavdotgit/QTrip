@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "C:/Users/HP/Downloads/qtrip-backend-master"
+		},
+		{
+			"name": "QTrip",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "qtrip-backend-master"
+	}
+}

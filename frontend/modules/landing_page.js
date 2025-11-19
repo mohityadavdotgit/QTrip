@@ -5,6 +5,14 @@ async function init() {
   let cities = await fetchCities();
 
   //Updates the DOM with the cities
+  cities= await cities.filter(city => city.id!="singapore")
+  cities.splice(3, 0,
+{
+    "id": "singapore",
+    "city": "Singapore",
+    "description": "100+ Places",
+    "image": "https://static.toiimg.com/thumb/msid-90660347,width-748,height-499,resizemode=4,imgsize-145460/.jpg"
+  })
   cities.forEach((key) => {
     addCityToDOM(key.id, key.city, key.description, key.image)
   });
